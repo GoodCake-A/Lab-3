@@ -7,7 +7,7 @@ import bsuir.vmsis.lab3.kitchen.Sugar;
 import bsuir.vmsis.lab3.kitchen.Tea;
 import bsuir.vmsis.lab3.kitchen.Water;
 
-public class Drinks {
+final public class Drinks {
 	public static String identifyDrink(Cup cup) {
 		String drink=" ";
 		boolean water=false;
@@ -42,5 +42,8 @@ public class Drinks {
 				break;
 			}
 		return drink;
+	}
+	private Drinks() {
+		
 	}
 }
